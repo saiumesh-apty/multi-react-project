@@ -1,0 +1,49 @@
+{
+  "name": "project-two",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/jest": "24.0.23",
+    "@types/node": "12.12.14",
+    "@types/react": "16.9.13",
+    "@types/react-dom": "16.9.4",
+    "babel-loader": "^8.0.6",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.2.0",
+    "react-svg-loader": "^3.0.3",
+    "typescript": "3.7.2",
+    "webpack-merge": "^4.2.2"
+  },
+  "scripts": {
+    "dev": "webpack --config ./config/webpack/webpack.dev.js --progress --profile",
+    "dev:light": "webpack --config ./config/webpack/webpack.light.js --progress --profile",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.10"
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  }
+}

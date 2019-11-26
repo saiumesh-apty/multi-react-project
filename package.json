@@ -1,0 +1,22 @@
+{
+  "name": "multi-react-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:heavy": "npm run build:heavy:one && npm run build:heavy:two && node copy.heavy.js",
+    "build:light": "npm run build:light:one && npm run build:light:two && node copy.light.js",
+    "build:heavy:one": "cd project-one && npm run dev && cd..",
+    "build:heavy:two": "cd project-two && npm run dev && cd..",
+    "build:light:one": "cd project-one && npm run dev:light && cd..",
+    "build:light:two": "cd project-two && npm run dev:light && cd.."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
